@@ -1,0 +1,130 @@
+/* CSS Stylesheet - Monochrome Dark Theme (Black & White) */
+
+:root {
+    --bg-color: #0d0d0d;
+    --card-bg: #171717;
+    --border-color: #2e2e2e;
+    --text-primary: #ffffff;
+    --text-secondary: #a3a3a3;
+    --accent-color: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Tajawal', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(13, 13, 13, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand {
+    color: var(--text-primary) !important;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: var(--text-secondary) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--text-primary) !important;
+}
+
+/* Section Title */
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: var(--text-primary);
+}
+
+/* Custom Buttons */
+.btn-custom-white {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ffffff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-white:hover {
+    background-color: #e6e6e6;
+    color: #000000;
+}
+
+.btn-custom-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid var(--border-color);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-outline:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.bg-outline-custom {
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+/* Profile Image Container */
+.profile-img-container {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid var(--border-color);
+    padding: 10px;
+    background-color: var(--card-bg);
+}
+
+/* Progress Bars */
+.custom-progress {
+    height: 8px;
+    background-color: var(--border-color);
+    border-radius: 4px;
+}
+
+/* Form Inputs */
+.custom-input {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.custom-input:focus {
+    background-color: var(--card-bg);
+    border-color: #ffffff;
+    color: var(--text-primary);
+    box-shadow: none;
+}
+
+.contact-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+}
+
+/* Timeline */
+.timeline {
+    border-color: var(--border-color) !important;
+}
